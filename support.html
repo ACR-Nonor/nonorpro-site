@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NoNor — Support</title>
+<meta name="description" content="How to get help with NoNor.">
+<meta property="og:title" content="NoNor — Support">
+<meta property="og:description" content="How to get help with NoNor.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon-32.png?v=f9df2a14" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=30be735e">
+<link rel="canonical" href="https://nonorpro.com/support.html">
+<meta property="og:image" content="https://nonorpro.com/assets/og.jpg?v=42722377">
+<meta property="og:url" content="https://nonorpro.com/support.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0c0e">
+<meta name="color-scheme" content="dark">
+<link rel="stylesheet" href="style.css?v=61bd5713">
+</head>
+<body>
+<header class="bar">
+  <a class="brand" href="index.html"><img src="assets/logo-teal.png?v=fca4ad81" alt=""><span>NoNor</span></a>
+  <nav>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="support.html" class="on">Support</a>
+  </nav>
+</header>
+<main class="doc reveal in">
+<h1>Support</h1>
+<p>Write to <a href="mailto:support@nonorpro.com">support@nonorpro.com</a> and a person will answer. Tell us which device you are
+on, the version of NoNor (Settings, at the bottom) and what you expected to happen.</p>
+<h2>Common questions</h2>
+<h3>What does it cost?</h3><p>NoNor is free to try for 14 days, then a subscription. The price will be on this page before launch.</p><h3>Do I have to log what I eat?</h3><p>No. Following the plan is the whole job. NoNor keeps a quiet record of what your plan served and what you trained, there when you want to look and easy to hide when you don't.</p><h3>Does everyone in my household need an iPhone?</h3><p>No. Add the people you cook for on your own phone, children included. Each gets their own day, portions and allergies, and their own plan if they need one.</p><h3>Can a nutritionist or coach send me a plan?</h3><p>Yes. They build the plan in NoNor and send it as a link. Open it on your iPhone and the whole plan, every recipe and session, is added to yours.</p><h3>Can NoNor keep me safe from an allergen?</h3><p>It warns you, for each person you cook for, and it can swap an ingredient out. It is a help, not a guarantee — always check the pack.</p><h3>Where does my information live?</h3><p>On your devices and in your own iCloud account. See the privacy policy.</p>
+<h2>The small print</h2>
+<p><a href="privacy.html">Privacy Policy</a> · <a href="health-data.html">Consumer Health Data Privacy Policy</a> · <a href="terms.html">Terms of Use</a></p>
+<p>NoNor is not a medical device and does not give medical advice.</p>
+</main>
+<footer>
+  <a class="mark" href="index.html" aria-label="NoNor"><img src="assets/logo-teal.png?v=fca4ad81" alt=""></a>
+  <p><a href="index.html">NoNor</a> · <a href="support.html">Support</a> · <a href="privacy.html">Privacy</a> · <a href="health-data.html">Consumer Health Data</a> · <a href="terms.html">Terms</a> ·
+     <a href="mailto:support@nonorpro.com">support@nonorpro.com</a></p>
+  <p class="fine">NoNor is published by NoNor Pro. NoNor is not a medical device and does not give medical advice.<br>Apple, iPhone, iPad and Apple Watch are trademarks of Apple Inc., registered in the U.S. and other countries. Route data © OpenStreetMap contributors.</p>
+</footer>
+<script>
+  const bar = document.querySelector('.bar');
+  addEventListener('scroll', () => bar.classList.toggle('stuck', scrollY > 8), { passive: true });
+  const io = new IntersectionObserver((es) => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px 12% 0px' });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  setTimeout(() => document.querySelectorAll('.reveal').forEach(el => { if (el.getBoundingClientRect().top < innerHeight) el.classList.add('in'); }), 60);
+</script>
+</body>
+</html>

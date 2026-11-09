@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NoNor — Consumer Health Data Privacy Policy</title>
+<meta name="description" content="What applies to consumer health data in NoNor, and how to use your rights.">
+<meta property="og:title" content="NoNor — Consumer Health Data Privacy Policy">
+<meta property="og:description" content="What applies to consumer health data in NoNor, and how to use your rights.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon-32.png?v=f9df2a14" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=30be735e">
+<link rel="canonical" href="https://nonorpro.com/health-data.html">
+<meta property="og:image" content="https://nonorpro.com/assets/og.jpg?v=42722377">
+<meta property="og:url" content="https://nonorpro.com/health-data.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0c0e">
+<meta name="color-scheme" content="dark">
+<link rel="stylesheet" href="style.css?v=61bd5713">
+</head>
+<body>
+<header class="bar">
+  <a class="brand" href="index.html"><img src="assets/logo-teal.png?v=fca4ad81" alt=""><span>NoNor</span></a>
+  <nav>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="support.html">Support</a>
+  </nav>
+</header>
+<main class="doc reveal in"><h1>NoNor Consumer Health Data Privacy Policy</h1>
+<p>Last updated: 9 November 2026</p>
+<p>This policy is for people covered by US state consumer health data laws, such as those of Washington and Nevada. NoNor Pro is the name under which André Cruz, an individual developer in Sweden, publishes NoNor.</p>
+<h2>The consumer health data we collect, and why</h2>
+<p>We collect consumer health data only when you use NoNor&#x27;s AI and allow it. Everything else in NoNor stays on your devices and in your own iCloud account.</p>
+<ul><li><b>Your allergies, diet, foods you avoid, goal, nutrition targets and supplements</b>, and the same for the people at home, without their names.</li><li><b>Meals and workouts</b> for the days you ask about.</li><li><b>Anything you type</b> to NoNor&#x27;s AI, and <b>pages you bring in</b> such as a coach&#x27;s plan, which can hold health details.</li></ul>
+<p>We use it only to answer you and do what you asked NoNor&#x27;s AI to do.</p>
+<h2>Where it comes from</h2>
+<p>From you: what you have entered in NoNor, what you type, and the pages you choose to bring in.</p>
+<h2>The consumer health data we share</h2>
+<p>None. We do not sell consumer health data or share it with third parties or affiliates, and we have no affiliates. Two service providers process it for us under contract, only to provide NoNor&#x27;s AI: Anthropic PBC, which runs the AI, and our hosting company.</p>
+<h2>Your rights, and how to use them</h2>
+<ul><li><b>Confirm and access.</b> Ask whether we hold consumer health data about you, and get a copy.</li><li><b>Withdraw your consent.</b> In the app: Settings → NoNor&#x27;s AI. Nothing more is sent after that.</li><li><b>Delete it.</b> Ask us to delete what we hold, and we will also tell our service providers. Anthropic deletes what it receives within 30 days, or up to 2 years if it was flagged for misuse.</li></ul>
+<p>Write to <b>support@nonorpro.com</b> from the address you want our answer sent to. We answer within 45 days. If we need longer, up to 45 more days, we will tell you why.</p>
+<p>If we refuse a request, you can appeal by replying to our answer within 30 days, and we will answer within 45 days. If your appeal is refused, you can complain to your state&#x27;s Attorney General. In Washington: atg.wa.gov/file-complaint.</p></main>
+<footer>
+  <a class="mark" href="index.html" aria-label="NoNor"><img src="assets/logo-teal.png?v=fca4ad81" alt=""></a>
+  <p><a href="index.html">NoNor</a> · <a href="support.html">Support</a> · <a href="privacy.html">Privacy</a> · <a href="health-data.html">Consumer Health Data</a> · <a href="terms.html">Terms</a> ·
+     <a href="mailto:support@nonorpro.com">support@nonorpro.com</a></p>
+  <p class="fine">NoNor is published by NoNor Pro. NoNor is not a medical device and does not give medical advice.<br>Apple, iPhone, iPad and Apple Watch are trademarks of Apple Inc., registered in the U.S. and other countries. Route data © OpenStreetMap contributors.</p>
+</footer>
+<script>
+  const bar = document.querySelector('.bar');
+  addEventListener('scroll', () => bar.classList.toggle('stuck', scrollY > 8), { passive: true });
+  const io = new IntersectionObserver((es) => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px 12% 0px' });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  setTimeout(() => document.querySelectorAll('.reveal').forEach(el => { if (el.getBoundingClientRect().top < innerHeight) el.classList.add('in'); }), 60);
+</script>
+</body>
+</html>
